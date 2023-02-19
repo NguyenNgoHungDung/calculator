@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+  }
+  
+ 
+  .Cal {
+    width: 400px;
+    margin: auto;
+  }
+  
+  .Cal-head {
+    flex-direction: row;
+    background: rgb(127, 225, 127);
+    width: 97%;
+    height: 130px;
+    
+  }
+  
+  .Cal-type {
+    margin-top: 20px;
+    font-size: 45px;
+    text-align: right;
+    color: #fff;
+  }
+  .Cal-result {
+    margin-top: 20px;
+    font-size: 45px;
+    text-align: right;
+    color: #fff;
+  }
+  
+  .calc-button-row {
+    width: 100%;
+    background: #3c4857;
+  }
+  
+  .button {
+    width: 25%;
+    background: #425062;
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: -4px;
+    border-right: solid 2px #3c4857;
+    border-bottom: solid 2px #3c4857;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button.l {
+    color: #aeb3ba;
+    background: #05270f;
+  }
+  
+  .button.c {
+    color: #d95d4e;
+    background: #3fd67e;
+  }
+  
+  .button:hover {
+    background: #2e3ae6;
+  }
+  
+  .button.c:hover,
+  .button.l:hover {
+    background: #2e3ae6;
+    color: #fff;
+  }
+  
+
+  
+
+// table {
+//   border: 1px solid black;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// input[type="button"] {
+//   width: 100%;
+//   padding: 20px 40px;
+//   background-color: green;
+//   color: white;
+//   font-size: 24px;
+//   font-weight: bold;
+//   border: none;
+//   border-radius: 5px;
+// }
+
+// input[type="text"] {
+//   padding: 20px 30px;
+//   font-size: 24px;
+//   font-weight: bold;
+//   border: none;
+//   border-radius: 5px;
+//   border: 2px solid black;
+// }

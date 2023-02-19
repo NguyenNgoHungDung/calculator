@@ -1,0 +1,41 @@
+<div class="Cal">
+      <div class="Cal-head">
+        <div class="Cal-type">
+          {{ (currentNumber$ | async)?.currentNumber ?? 0}}
+          <br/>
+        </div>
+        <div class="Cal-result">
+          {{ (currentNumber$ | async)?.result ?? 0}}
+        </div>
+        <div class="Cal-button">
+          
+        </div>
+      </div>
+     
+      <div class="Cal-button">
+        <div class="button" (click)="enterKey('7','number')">7</div>
+        <div class="button" (click)="enterKey('8','number')">8</div>
+        <div class="button" (click)="enterKey('9','number')">9</div>
+        <div class="button l" (click)="enterKey('/','operator')">/</div>
+      </div>
+      <div class="Cal-button">
+        <div class="button" (click)="enterKey('4','number')">4</div>
+        <div class="button" (click)="enterKey('5','number')">5</div>
+        <div class="button" (click)="enterKey('6','number')">6</div>
+        <div class="button l" (click)="enterKey('*','operator')">x</div>
+      </div>
+      <div class="Cal-button">
+        <div class="button" (click)="enterKey('1','number')">1</div>
+        <div class="button" (click)="enterKey('2','number')">2</div>
+        <div class="button" (click)="enterKey('3','number')">3</div>
+        <div class="button l" (click)="enterKey('-','operator')">-</div>
+      </div>
+      <div class="Cal-button">
+        <div class="button" (click)="enterKey('.','number')">.</div>
+        <div class="button" (click)="enterKey('0','number')">0</div>
+        <div class="button c" (click)="enterKey('C','operator')">C</div>
+        <div class="button l" (click)="enterKey('+','operator')">+</div>
+      </div>
+    </div>
+  
+  
