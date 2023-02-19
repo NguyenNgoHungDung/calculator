@@ -11,25 +11,8 @@ const initialState = <Calculator>{
 
 export const calculatorReducer = createReducer(
     initialState,
-    // on(CalculatorActions.enterNumber, (state, action) => {
-    //     let newState = { ...state };
-    //     if (action.number == '.') {
-    //         if (!state.currentNumber.includes('.')) {
-    //             newState.currentNumber = state.currentNumber + '.';
-    //         }
-    //         return newState;
-    //     }
-    //     if (state.currentNumber == '0') {
-    //         newState.currentNumber = action.number;
-    //     } else {
-    //         newState.currentNumber = state.currentNumber + action.number;
-    //     }
-    //     return newState;
-    // }),
-
     on(CalculatorActions.EnterKey, (state, action) => {
         if (action.keyType == 'number') {
-            
             let newState = { ...state };
             if (action.key == '.' && !state.currentNumber.includes(`${state.currentNumber}.`)) {
                 if (!state.currentNumber.includes('.')) {
@@ -185,7 +168,7 @@ export const calculatorReducer = createReducer(
                         previousNumber: state.result,
                         currentNumber: '0',
                         operator: action.key,
-                        // result: result.toString(),
+                        
                     };
                 }
                 return {
@@ -193,7 +176,7 @@ export const calculatorReducer = createReducer(
                     previousNumber: state.currentNumber,
                     currentNumber: '0',
                     operator: action.key,
-                    // result: result.toString(),
+                    
                 };
             }
         }
